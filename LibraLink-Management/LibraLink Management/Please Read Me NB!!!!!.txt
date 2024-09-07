@@ -1,0 +1,18 @@
+To Connect JavaDB
+-----------------
+
+Right-click JavaDB in Apache Netbeans under Services.
+- Select Properties
+- JB install then selct Root Folder
+- Select the db-derby-10.17.1.0-bin Folder OK
+- Select DB Location Browse
+- Select Root folder, then \LibraLink Management
+- Then start server
+Username - app
+Password - app
+
+Add Derby to library
+In Root Folder db-derby-10.17.1.0-bin
+
+To Connect JavaDB
+-----------------

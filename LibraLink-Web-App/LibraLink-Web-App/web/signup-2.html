@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>LibraLink - Create Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css">
+    <style>
+        .switch-container { display: flex; align-items: center; gap: 10px; }
+        .switch { position: relative; display: inline-block; width: 34px; height: 20px; }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 20px; }
+        .slider:before { position: absolute; content: ""; height: 12px; width: 12px; border-radius: 50%; left: 4px; bottom: 4px; background-color: white; transition: .4s; }
+        input:checked + .slider { background-color: #2196F3; }
+        input:checked + .slider:before { transform: translateX(14px); }
+    </style>
+</head>
+<body>
+<section class="h-screen flex items-center justify-center bg-no-repeat inset-0 bg-cover bg-[url('../images/bg-2.png')]">
+        <div class="container 2xl:px-80 xl:px-52">
+            <div class="bg-white rounded-lg overflow-hidden" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                <div class="grid xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 gap-6">
+                    <div class="xl:col-span-2 lg:col-span-1">
+                        <div class="bg-sky-600 text-white gap-10 h-full w-full p-7 space-y-6 lg:space-y-0">
+                            <img src="assets/images/LibraLink-Logo.webp" alt="LibraLink Logo"/>
+                            <div class="flex flex-col justify-center text-center h-full">
+                                <h1 class="text-3xl/tight mb-4">Welcome Back!</h1>
+                                <p class="text-gray-200 font-normal leading-relaxed">To keep connected with us please login with your personal info</p>
+                                <div class="my-8">
+                                    <a href="index.html" class="border text-white font-medium text-sm rounded-full transition-all duration-300 hover:bg-white hover:text-black focus:bg-white focus:text-black px-14 py-2.5">Sign In</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="xl:col-span-3 lg:col-span-2 lg:m-10 m-5">
+                        <div class="text-center">
+                            <h1 class="text-3xl/tight text-sky-600 mb-3">Create Account</h1>
+                            <form action="RegisterServlet" method="POST">
+                                <div class="space-y-5 mt-10">
+                                    <div class="relative">
+                                        <input class="text-gray-500 border-gray-300 focus:ring-0 focus:border-gray-400 text-sm rounded-lg py-2.5 px-4 w-full ps-11" type="email" id="email" name="email" placeholder="Email" aria-label="Email">
+                                        <div class="absolute text-sky-600 inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-4">
+                                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="relative">
+                                        <input class="text-gray-500 border-gray-300 focus:ring-0 focus:border-gray-400 text-sm rounded-lg py-2.5 px-4 w-full ps-11" type="password" id="pwd" name="pwd" placeholder="Password" aria-label="Password">
+                                        <div class="absolute text-sky-600 inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-4">
+                                            <i class="fa-solid fa-lock" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                        <div class="flex gap-5">
+                                        <div class="relative flex-1">
+                                            <input class="text-gray-500 border-gray-300 focus:ring-0 focus:border-gray-400 text-sm rounded-lg py-2.5 px-4 w-full ps-11" type="text" id="Name" name="name" placeholder="Name" aria-label="Name">
+                                            <div class="absolute text-sky-600 inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-4">
+                                                <i class="fa-solid fa-user" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div class="relative flex-1">
+                                            <input class="text-gray-500 border-gray-300 focus:ring-0 focus:border-gray-400 text-sm rounded-lg py-2.5 px-4 w-full ps-11" type="text" id="Surname" name="surname" placeholder="Surname" aria-label="Surname">
+                                            <div class="absolute text-sky-600 inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-4">
+                                                <i class="fa-solid fa-user" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="relative">
+                                        <input class="text-gray-500 border-gray-300 focus:ring-0 focus:border-gray-400 text-sm rounded-lg py-2.5 px-4 w-full ps-11" type="text" id="Phone" name="phone" placeholder="Phone" aria-label="Phone">
+                                        <div class="absolute text-sky-600 inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-4">
+                                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="switch-container mt-6">
+                                        <label for="LecturerSwitch" class="inline-flex items-center">
+                                            <span class="mr-3">Register as Librarian?</span>
+                                            <label class="switch">
+                                                <input type="checkbox" id="LecturerSwitch" name="LecturerSwitch" onchange="toggleLecturerDetails()">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </label>
+                                    </div>
+                                        <div id="LecturerDetails" class="hidden-box" style="display: none;">
+                                        <div class="relative">
+                                            <input class="text-gray-500 border-gray-300 focus:ring-0 focus:border-gray-400 text-sm rounded-lg py-2.5 px-4 w-full ps-11" type="password" id="LecturerCode" name="LecturerCode" placeholder="Librarian Code" aria-label="Lecturer Code">
+                                            <div class="absolute text-sky-600 inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-4">
+                                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-8">
+                                        <button class="bg-sky-600 text-white font-medium text-sm rounded-full px-14 py-3">Sign Up</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toggleLecturerDetails() {
+            var checkbox = document.getElementById('LecturerSwitch');
+            var lecturerDetails = document.getElementById('LecturerDetails');
+            lecturerDetails.style.display = checkbox.checked ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

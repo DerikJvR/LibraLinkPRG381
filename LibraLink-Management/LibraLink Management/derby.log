@@ -1,0 +1,20 @@
+Thu Aug 29 23:29:01 SAST 2024 : Apache Derby Network Server - 10.17.1.0 - (1913217) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Thu Aug 29 23:29:01 SAST 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.17.1.0 - (1913217): instance a816c00e-0191-a00a-b42e-ffff9ec7ed6f 
+on database directory C:\Users\tnthe\OneDrive\Desktop\LibraLink Management\LibraLink Management\LibraLink Management\LibraryDB with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@70dea4e 
+Loaded from file:/C:/Users/tnthe/OneDrive/Desktop/LibraLink%20Management/LibraLink%20Management/db-derby-10.17.1.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=21.0.3+7-LTS-152
+user.dir=C:\Users\tnthe\OneDrive\Desktop\LibraLink Management\LibraLink Management\db-derby-10.17.1.0-bin
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\tnthe\OneDrive\Desktop\LibraLink Management\LibraLink Management\LibraLink Management
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Aug 29 23:43:43 SAST 2024: Shutting down Derby engine
+----------------------------------------------------------------
+Thu Aug 29 23:43:43 SAST 2024:
+Shutting down instance a816c00e-0191-a00a-b42e-ffff9ec7ed6f on database directory C:\Users\tnthe\OneDrive\Desktop\LibraLink Management\LibraLink Management\LibraLink Management\LibraryDB with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@70dea4e 
+----------------------------------------------------------------
