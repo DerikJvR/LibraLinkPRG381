@@ -34,3 +34,17 @@ A desktop-based Library Management System created using **Java Swing** with CRUD
 1. **Core Java & OOP Concepts**: Implement proper use of collections, exception handling, inheritance, polymorphism, encapsulation, and abstraction.
 2. **Web Application**: Implement user registration and login with server-side validation using PostgreSQL.
 3. **Desktop Application**: CRUD operations on books and borrowers with a user-friendly GUI using **Swing**.
+
+![image7](https://github.com/user-attachments/assets/d4ae2e4b-7f43-4863-9882-33060c2612e5)
+
+![image](https://github.com/user-attachments/assets/f82d515d-a0fd-4900-b41a-377cdf71188a)
+
+![image2](https://github.com/user-attachments/assets/ced5783d-1378-4a24-88a8-743901a6025b)
+
+![image3](https://github.com/user-attachments/assets/a2d27d22-9da0-4131-8f48-39d07585b74d)
+
+![image4](https://github.com/user-attachments/assets/a764683f-ad97-48b2-bf20-67623756c2be)
+
+![image5](https://github.com/user-attachments/assets/acf60876-4110-4b8b-ae5b-34f5dd9a2f60)
+
+![image6](https://github.com/user-attachments/assets/063a1071-a840-4f8c-864c-cca7878ee540)
